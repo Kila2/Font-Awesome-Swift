@@ -144,8 +144,9 @@ public extension UIButton {
     }
     
     func setFATitleColor(color: UIColor, forState state: UIControlState = .normal) {
-        FontLoader.loadFont((self.titleLabel?.FAIcon)!)
-        
+        if let faIcon = self.titleLabel?.FAIcon {
+            FontLoader.loadFont(faIcon)
+        }
         
         let attributedString = NSMutableAttributedString(attributedString: attributedTitle(for: state) ?? NSAttributedString())
         attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: color, range: NSMakeRange(0, attributedString.length))
@@ -444,6 +445,10 @@ public protocol FAType {
 }
 
 public enum FATypeHelper:FAType {
+    public var text: String? {
+        return ""
+    }
+    
     public func fontName() -> String {
         return ""
     }
@@ -458,22 +463,6 @@ public enum FATypeHelper:FAType {
     
     public static var count: Int {
         return FARegularIcons.count + FABrandsIcons.count + FASolidIcons.count
-    }
-    
-    public var text: String? {
-        if self is FARegular {
-            let my = self as! FARegular
-            return FARegularIcons[my.rawValue]
-        }
-        else if self is FASolid {
-            let my = self as! FASolid
-            return FASolidIcons[my.rawValue]
-        }
-        else if self is FABrands {
-            let my = self as! FABrands
-            return FABrandsIcons[my.rawValue]
-        }
-        return nil
     }
     
     public static func index(of title: String, type:Any) -> Int? {
@@ -491,10 +480,12 @@ public enum FATypeHelper:FAType {
     
     public static func rawValue(rawValue:Int, type:Any) -> FAType? {
         if type is FARegular.Type {
-            return FARegular.init(rawValue: rawValue)
+            let realValue = rawValue - FABrandsIcons.count;
+            return FARegular.init(rawValue: realValue)
         }
         else if type is FASolid.Type {
-            return FASolid.init(rawValue: rawValue)
+            let realValue = rawValue - FABrandsIcons.count - FARegularIcons.count;
+            return FASolid.init(rawValue: realValue)
         }
         else if type is FABrands.Type {
             return FABrands.init(rawValue: rawValue)
