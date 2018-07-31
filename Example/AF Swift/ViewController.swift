@@ -22,8 +22,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         initialize()
         
-        bGithub.setFAIcon(icon: FAType.FAGithub, iconSize: 35)
-        bTwitter.setFAIcon(icon: FAType.FATwitter, iconSize: 35)
+        bGithub.setFAIcon(icon: FABrands.FABGithub, iconSize: 35)
+        bTwitter.setFAIcon(icon: FABrands.FABTwitter, iconSize: 35)
     }
     
     @IBAction func bGithubPressed(sender: UIBarButtonItem) {
@@ -45,9 +45,23 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let c = tableView.dequeueReusableCell(withIdentifier: "IconCell") as! IconCell
-        c.lFont.text = resultSearchController.isActive ? filteredData[indexPath.row] : Helper.FANames[indexPath.row]
+        let faName = resultSearchController.isActive ? filteredData[indexPath.row] : Helper.FANames[indexPath.row]
+        c.lFont.text = faName
+        var type:Any
+        if(faName.starts(with: "FAB")) {
+            type = FABrands.self
+        }
+        else if (faName.starts(with: "FAS")) {
+            type = FASolid.self
+        }
+        else if (faName.starts(with: "FAR")) {
+            type = FARegular.self
+        }
+        else {
+            return UITableViewCell()
+        }
         
-        guard let icon = resultSearchController.isActive ? FAType(rawValue: Helper.FANames.index(of: filteredData[indexPath.row])!) : FAType(rawValue: indexPath.row) else {
+        guard let icon = resultSearchController.isActive ? FATypeHelper.rawValue(rawValue: Helper.FANames.index(of: filteredData[indexPath.row])!, type: type): FATypeHelper.rawValue(rawValue: indexPath.row ,type:type) else {
             return UITableViewCell()
         }
         
@@ -60,7 +74,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resultSearchController.isActive ? filteredData.count :  FAType.count
+        return resultSearchController.isActive ? filteredData.count :  FATypeHelper.count
     }
     
     func updateSearchResults(for searchController: UISearchController) {

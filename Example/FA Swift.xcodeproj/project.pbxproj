@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DDF10D5211035A900BBEC35 /* Font-Awesome-5-Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF10D2211035A900BBEC35 /* Font-Awesome-5-Free-Regular-400.otf */; };
+		2DDF10D6211035A900BBEC35 /* Font-Awesome-5-Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF10D3211035A900BBEC35 /* Font-Awesome-5-Free-Solid-900.otf */; };
+		2DDF10D7211035A900BBEC35 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2DDF10D4211035A900BBEC35 /* Font-Awesome-5-Brands-Regular-400.otf */; };
 		4E00AD5D1B5EBE6D0042DCD5 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E00AD5B1B5EBE6D0042DCD5 /* FAIcon.swift */; };
-		4E00AD5E1B5EBE6D0042DCD5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E00AD5C1B5EBE6D0042DCD5 /* FontAwesome.ttf */; };
 		4E67E1AD1E3F5CA40062CB50 /* MoreExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67E1AC1E3F5CA40062CB50 /* MoreExamples.swift */; };
 		4E8940111F5AC211006BB211 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8940101F5AC211006BB211 /* Helper.swift */; };
 		4EFFFAC81B53D5D7003CD25A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFFAC71B53D5D7003CD25A /* AppDelegate.swift */; };
@@ -31,8 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DDF10D2211035A900BBEC35 /* Font-Awesome-5-Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Regular-400.otf"; sourceTree = "<group>"; };
+		2DDF10D3211035A900BBEC35 /* Font-Awesome-5-Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Solid-900.otf"; sourceTree = "<group>"; };
+		2DDF10D4211035A900BBEC35 /* Font-Awesome-5-Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		4E00AD5B1B5EBE6D0042DCD5 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
-		4E00AD5C1B5EBE6D0042DCD5 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		4E67E1AC1E3F5CA40062CB50 /* MoreExamples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreExamples.swift; sourceTree = "<group>"; };
 		4E8940101F5AC211006BB211 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		4EFFFAC21B53D5D7003CD25A /* FA Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FA Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				4E00AD5B1B5EBE6D0042DCD5 /* FAIcon.swift */,
-				4E00AD5C1B5EBE6D0042DCD5 /* FontAwesome.ttf */,
+				2DDF10D4211035A900BBEC35 /* Font-Awesome-5-Brands-Regular-400.otf */,
+				2DDF10D2211035A900BBEC35 /* Font-Awesome-5-Free-Regular-400.otf */,
+				2DDF10D3211035A900BBEC35 /* Font-Awesome-5-Free-Solid-900.otf */,
 			);
 			name = "Source - FA Swift";
 			path = ../../Source;
@@ -183,7 +189,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Patrik Vaberer";
 				TargetAttributes = {
 					4EFFFAC11B53D5D7003CD25A = {
@@ -221,10 +227,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DDF10D7211035A900BBEC35 /* Font-Awesome-5-Brands-Regular-400.otf in Resources */,
+				2DDF10D6211035A900BBEC35 /* Font-Awesome-5-Free-Solid-900.otf in Resources */,
 				4EFFFACD1B53D5D7003CD25A /* Main.storyboard in Resources */,
 				4EFFFAD21B53D5D7003CD25A /* LaunchScreen.xib in Resources */,
 				4EFFFACF1B53D5D7003CD25A /* Images.xcassets in Resources */,
-				4E00AD5E1B5EBE6D0042DCD5 /* FontAwesome.ttf in Resources */,
+				2DDF10D5211035A900BBEC35 /* Font-Awesome-5-Free-Regular-400.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,12 +309,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -356,12 +366,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
