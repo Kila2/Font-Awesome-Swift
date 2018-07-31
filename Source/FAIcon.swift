@@ -404,7 +404,8 @@ private struct FAStruct {
 
 private class FontLoader {
     class func loadFont(_ faType: FAType) {
-        if(UIFont.fontNames(forFamilyName: faType.fontFamilyName()).count == 0){
+        let fontNames = UIFont.fontNames(forFamilyName: faType.fontFamilyName())
+        if(fontNames.count == 0 || fontNames.index(of: faType.fontName()) == nil){
             let bundle = Bundle(for: FontLoader.self)
             let identifier = bundle.bundleIdentifier
             

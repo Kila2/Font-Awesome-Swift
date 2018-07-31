@@ -61,7 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return UITableViewCell()
         }
         
-        guard let icon = resultSearchController.isActive ? FATypeHelper.rawValue(rawValue: Helper.FANames.index(of: filteredData[indexPath.row])!, type: type): FATypeHelper.rawValue(rawValue: indexPath.row ,type:type) else {
+       guard let icon = resultSearchController.isActive ? FATypeHelper.rawValue(rawValue: Helper.FANames.index(of: filteredData[indexPath.row])!, type: type): FATypeHelper.rawValue(rawValue: indexPath.row ,type:type) else {
             return UITableViewCell()
         }
         
