@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Kila2-Font-Awesome-Swift'
-  s.version = '1.7.5'
+  s.version = '1.7.6'
   s.license = 'MIT'
   s.summary = 'Font Awesome swift library for iOS.'
   s.homepage = 'https://github.com/Kila2/Font-Awesome-Swift'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   s.source_files   = 'Source/FAIcon.swift'
-  s.resource_bundle = { 'Font-Awesome-Swift' => 'Source/FontAwesome.ttf' }
+  s.resource_bundle = { 'Font-Awesome-Swift' => 'Source/*.otf' }
   s.frameworks = 'UIKit', 'CoreText'
   s.requires_arc = true
 end

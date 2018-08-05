@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2761AF572116B0FF00DC381C /* Font-Awesome-5-Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2761AF542116B0FF00DC381C /* Font-Awesome-5-Free-Solid-900.otf */; };
+		2761AF582116B0FF00DC381C /* Font-Awesome-5-Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2761AF552116B0FF00DC381C /* Font-Awesome-5-Brands-Regular-400.otf */; };
+		2761AF592116B0FF00DC381C /* Font-Awesome-5-Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2761AF562116B0FF00DC381C /* Font-Awesome-5-Free-Regular-400.otf */; };
 		9C1D57E01E27FE9F00DAFD50 /* FontAwesomeSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C1D57DE1E27FE9F00DAFD50 /* FontAwesomeSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C1D57F11E27FEDA00DAFD50 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D57E61E27FEDA00DAFD50 /* LICENSE */; };
 		9C1D57F21E27FEDA00DAFD50 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D57E71E27FEDA00DAFD50 /* README.md */; };
@@ -14,11 +17,13 @@
 		9C1D57F41E27FEDA00DAFD50 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D57EA1E27FEDA00DAFD50 /* image1.png */; };
 		9C1D57F51E27FEDA00DAFD50 /* opensource_matters.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D57EB1E27FEDA00DAFD50 /* opensource_matters.png */; };
 		9C1D57F61E27FEDA00DAFD50 /* FAIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D57ED1E27FEDA00DAFD50 /* FAIcon.swift */; };
-		9C1D57F71E27FEDA00DAFD50 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D57EE1E27FEDA00DAFD50 /* FontAwesome.ttf */; };
 		9C1D57F81E27FEDA00DAFD50 /* update_tool.php in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D57F01E27FEDA00DAFD50 /* update_tool.php */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2761AF542116B0FF00DC381C /* Font-Awesome-5-Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Solid-900.otf"; sourceTree = "<group>"; };
+		2761AF552116B0FF00DC381C /* Font-Awesome-5-Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		2761AF562116B0FF00DC381C /* Font-Awesome-5-Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font-Awesome-5-Free-Regular-400.otf"; sourceTree = "<group>"; };
 		9C1D57DB1E27FE9F00DAFD50 /* FontAwesomeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FontAwesomeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D57DE1E27FE9F00DAFD50 /* FontAwesomeSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontAwesomeSwift.h; sourceTree = "<group>"; };
 		9C1D57DF1E27FE9F00DAFD50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -28,7 +33,6 @@
 		9C1D57EA1E27FEDA00DAFD50 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		9C1D57EB1E27FEDA00DAFD50 /* opensource_matters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opensource_matters.png; sourceTree = "<group>"; };
 		9C1D57ED1E27FEDA00DAFD50 /* FAIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAIcon.swift; sourceTree = "<group>"; };
-		9C1D57EE1E27FEDA00DAFD50 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		9C1D57F01E27FEDA00DAFD50 /* update_tool.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = update_tool.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				9C1D57ED1E27FEDA00DAFD50 /* FAIcon.swift */,
-				9C1D57EE1E27FEDA00DAFD50 /* FontAwesome.ttf */,
+				2761AF552116B0FF00DC381C /* Font-Awesome-5-Brands-Regular-400.otf */,
+				2761AF562116B0FF00DC381C /* Font-Awesome-5-Free-Regular-400.otf */,
+				2761AF542116B0FF00DC381C /* Font-Awesome-5-Free-Solid-900.otf */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -170,8 +176,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2761AF592116B0FF00DC381C /* Font-Awesome-5-Free-Regular-400.otf in Resources */,
+				2761AF582116B0FF00DC381C /* Font-Awesome-5-Brands-Regular-400.otf in Resources */,
+				2761AF572116B0FF00DC381C /* Font-Awesome-5-Free-Solid-900.otf in Resources */,
 				9C1D57F41E27FEDA00DAFD50 /* image1.png in Resources */,
-				9C1D57F71E27FEDA00DAFD50 /* FontAwesome.ttf in Resources */,
 				9C1D57F11E27FEDA00DAFD50 /* LICENSE in Resources */,
 				9C1D57F81E27FEDA00DAFD50 /* update_tool.php in Resources */,
 				9C1D57F31E27FEDA00DAFD50 /* helper.png in Resources */,
