@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name = 'Kila2/Font-Awesome-Swift'
+  s.name = 'Kila2-Font-Awesome-Swift'
   s.version = '1.7.5'
   s.license = 'MIT'
   s.summary = 'Font Awesome swift library for iOS.'
-  s.homepage = 'https://github.com/Vaberer/Font-Awesome-Swift'
+  s.homepage = 'https://github.com/Kila2/Font-Awesome-Swift'
   s.screenshots = "https://raw.githubusercontent.com/Kila2/Font-Awesome-Swift/master/resources/image1.png"
   s.social_media_url = 'http://twitter.com/vaberer'
   s.authors = { "Patrik Vaberer" => "patrik.vaberer@gmail.com" }
